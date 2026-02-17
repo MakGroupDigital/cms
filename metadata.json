@@ -1,0 +1,7 @@
+{
+  "name": "Congo Mapendo Service (CMS) Corporate",
+  "description": "A high-end corporate website for CMS SARL, a leading multi-service holding in DRC specializing in infrastructure, technology, and facility management.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
