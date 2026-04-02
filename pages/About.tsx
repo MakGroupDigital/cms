@@ -107,14 +107,21 @@ const About: React.FC = () => {
                 transition={{ delay: i * 0.2 }}
                 className="group relative"
               >
-                <div className="aspect-[3/4] overflow-hidden rounded-[40px] border border-white/10">
-                  <img src={member.image} alt={member.name} className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 scale-105 group-hover:scale-100" />
-                </div>
-                <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent opacity-60"></div>
-                <div className="absolute bottom-10 left-10 right-10 p-2">
-                   <h4 className="text-2xl font-serif font-bold text-white mb-1">{member.name}</h4>
-                   <p className="text-red-500 font-black uppercase text-[10px] tracking-[0.3em]">{member.role}</p>
-                </div>
+                <a 
+                  href={member.link || '#'} 
+                  target={member.link ? '_blank' : undefined}
+                  rel={member.link ? 'noopener noreferrer' : undefined}
+                  className={member.link ? 'cursor-pointer' : ''}
+                >
+                  <div className="aspect-[3/4] overflow-hidden rounded-[40px] border border-white/10">
+                    <img src={member.image} alt={member.name} className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 scale-105 group-hover:scale-100" />
+                  </div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent opacity-60"></div>
+                  <div className="absolute bottom-10 left-10 right-10 p-2">
+                     <h4 className="text-2xl font-serif font-bold text-white mb-1 hover:text-red-500 transition-colors">{member.name}</h4>
+                     <p className="text-red-500 font-black uppercase text-[10px] tracking-[0.3em]">{member.role}</p>
+                  </div>
+                </a>
               </motion.div>
             ))}
           </div>

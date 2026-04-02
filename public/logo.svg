@@ -1,0 +1,22 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Fond -->
+  <rect width="200" height="200" fill="#0f172a" rx="20"/>
+  
+  <!-- Cercle extérieur rouge -->
+  <circle cx="100" cy="100" r="95" fill="none" stroke="#ef4444" stroke-width="3"/>
+  
+  <!-- Forme géométrique centrale - Hexagone stylisé -->
+  <g transform="translate(100, 100)">
+    <!-- Triangle supérieur -->
+    <polygon points="0,-45 39,22.5 -39,22.5" fill="#ef4444" opacity="0.9"/>
+    
+    <!-- Carré inférieur -->
+    <rect x="-30" y="20" width="60" height="50" fill="#1e293b" stroke="#ef4444" stroke-width="2"/>
+    
+    <!-- Texte CMS -->
+    <text x="0" y="55" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#ef4444" text-anchor="middle" letter-spacing="2">CMS</text>
+  </g>
+  
+  <!-- Accent ligne -->
+  <line x1="20" y1="190" x2="180" y2="190" stroke="#ef4444" stroke-width="2"/>
+</svg>

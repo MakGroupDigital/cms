@@ -1,7 +1,24 @@
 {
-  "name": "Congo Mapendo Service (CMS) Corporate",
-  "description": "A high-end corporate website for CMS SARL, a leading multi-service holding in DRC specializing in infrastructure, technology, and facility management.",
-  "requestFramePermissions": [
-    "geolocation"
+  "name": "Congo Mapendo Service (CMS) SARL",
+  "short_name": "CMS",
+  "description": "Leader multi-services en RDC spécialisé en infrastructure, technologie et facility management. Excellence, proximité et innovation.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0f172a",
+  "theme_color": "#ef4444",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ],
+  "categories": ["business", "services"],
+  "screenshots": [
+    {
+      "src": "/logo.svg",
+      "sizes": "192x192",
+      "type": "image/svg+xml"
+    }
   ]
 }

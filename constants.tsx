@@ -23,7 +23,9 @@ export const POLES: Pole[] = [
       "Forage d'eau (Hydraulique)",
       "Énergie Solaire & Électricité",
       "Froid Industriel & Morgues",
-      "Plomberie Générale"
+      "Climatisation Industrielle",
+      "Plomberie Générale",
+      "Systèmes de Refroidissement"
     ]
   },
   {
@@ -38,7 +40,9 @@ export const POLES: Pole[] = [
       "Contrôle d'accès & Serrures",
       "Sécurité Incendie",
       "Réseaux Informatiques",
-      "Téléphonie d'entreprise"
+      "Téléphonie d'entreprise",
+      "Climatisation Bureaux & Serveurs",
+      "Systèmes de Ventilation Intelligents"
     ]
   },
   {
@@ -50,10 +54,13 @@ export const POLES: Pole[] = [
     image: "https://images.unsplash.com/photo-1581578731522-745d05db9ad2?q=80&w=2070&auto=format&fit=crop",
     services: [
       "Hygiène & Salubrité (Nettoyage)",
+      "Traitement Insalubrité & Désinfection",
       "Aménagement Paysager (Jardinage)",
       "Gestion Immobilière",
       "Désinfection & 3D",
-      "Maintenance Piscines"
+      "Maintenance Piscines",
+      "Climatisation Commerciale",
+      "Confort Thermique & Qualité de l'Air"
     ]
   }
 ];
@@ -66,7 +73,7 @@ export const STATS: Stat[] = [
 ];
 
 export const TEAM: TeamMember[] = [
-  { name: "Directeur Général", role: "Leadership Stratégique", image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=1974&auto=format&fit=crop" },
-  { name: "Responsable Technique", role: "Expertise & Qualité", image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=2070&auto=format&fit=crop" },
+  { name: "Joël Mapendo", role: "Leadership Stratégique", image: "/Photo DG.jpeg" },
+  { name: "Charmant Nyungu", role: "Consultant Permanent Expert en Tech et Innovation", image: "/photo M.Charlant Nyungu K.jpg", link: "https://charmantnyungu.com", email: "consultant@charmantnyungu.com" },
   { name: "Coordination Logistique", role: "Efficacité Opérationnelle", image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=1976&auto=format&fit=crop" }
 ];

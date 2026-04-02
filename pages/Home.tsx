@@ -2,8 +2,8 @@
 import React from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { ArrowRight, ChevronRight, Award, Users, Clock, CheckCircle2, Zap, Shield, Building2, Globe } from 'lucide-react';
-import { POLES, STATS } from '../constants';
+import { ArrowRight, ChevronRight, Award, Users, Clock, CheckCircle2, Zap, Shield, Building2, Globe, Briefcase, TrendingUp, Lightbulb, MapPin, Phone, Mail, Star, Target, Rocket, Headphones } from 'lucide-react';
+import { POLES, STATS, CONTACT_INFO } from '../constants';
 
 const Home: React.FC = () => {
   const { scrollYProgress } = useScroll();
@@ -246,6 +246,308 @@ const Home: React.FC = () => {
               <div className="text-red-500 text-xs font-black uppercase tracking-widest">Support Technique</div>
             </div>
           </motion.div>
+        </div>
+      </section>
+
+      {/* Processus & Méthodologie */}
+      <section className="py-32 bg-white/5">
+        <div className="max-w-7xl mx-auto px-6">
+          <motion.div 
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            className="text-center mb-20"
+          >
+            <h3 className="text-red-500 font-black uppercase tracking-[0.4em] mb-4 text-xs">Notre Approche</h3>
+            <h2 className="text-5xl font-serif text-white mb-6">Processus Éprouvé en 5 Étapes</h2>
+            <p className="text-slate-400 max-w-2xl mx-auto text-lg">Une méthodologie rigoureuse garantissant la réussite de chaque projet.</p>
+          </motion.div>
+
+          <div className="grid md:grid-cols-5 gap-6">
+            {[
+              { num: "01", title: "Audit", desc: "Diagnostic complet de vos besoins" },
+              { num: "02", title: "Conception", desc: "Solutions sur-mesure adaptées" },
+              { num: "03", title: "Planification", desc: "Calendrier et ressources optimisés" },
+              { num: "04", title: "Exécution", desc: "Mise en œuvre avec excellence" },
+              { num: "05", title: "Suivi", desc: "Support et maintenance continue" }
+            ].map((step, i) => (
+              <motion.div 
+                key={i}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ delay: i * 0.1 }}
+                className="relative group"
+              >
+                <div className="glass p-8 rounded-2xl text-center h-full flex flex-col justify-between">
+                  <div className="text-6xl font-black text-red-600/30 mb-4">{step.num}</div>
+                  <h4 className="text-white font-bold text-xl mb-3 uppercase">{step.title}</h4>
+                  <p className="text-slate-400 text-sm">{step.desc}</p>
+                </div>
+                {i < 4 && <div className="hidden md:block absolute top-1/2 -right-3 w-6 h-[2px] bg-red-600/50"></div>}
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Secteurs d'Activité */}
+      <section className="py-32 max-w-7xl mx-auto px-6">
+        <motion.div 
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          className="text-center mb-20"
+        >
+          <h3 className="text-red-500 font-black uppercase tracking-[0.4em] mb-4 text-xs">Secteurs Clés</h3>
+          <h2 className="text-5xl font-serif text-white mb-6">Industries que Nous Servons</h2>
+        </motion.div>
+
+        <div className="grid md:grid-cols-3 gap-8">
+          {[
+            { icon: Building2, title: "Secteur Public", desc: "Ministères, collectivités et institutions gouvernementales" },
+            { icon: Briefcase, title: "Secteur Privé", desc: "Entreprises, PME et multinationales" },
+            { icon: Globe, title: "ONG & Humanitaire", desc: "Organisations internationales et associations" },
+            { icon: Zap, title: "Énergie & Mines", desc: "Sociétés d'extraction et production énergétique" },
+            { icon: Building2, title: "Immobilier", desc: "Promoteurs et gestionnaires immobiliers" },
+            { icon: Headphones, title: "Télécommunications", desc: "Opérateurs et fournisseurs de services" }
+          ].map((sector, i) => (
+            <motion.div 
+              key={i}
+              initial={{ opacity: 0, scale: 0.9 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ delay: i * 0.1 }}
+              whileHover={{ translateY: -10 }}
+              className="glass p-8 rounded-2xl border border-white/10 group hover:border-red-600/50 transition-all"
+            >
+              <div className="text-red-500 mb-4 group-hover:scale-125 transition-transform"><sector.icon size={40} /></div>
+              <h4 className="text-white font-bold text-xl mb-3 uppercase">{sector.title}</h4>
+              <p className="text-slate-400 text-sm leading-relaxed">{sector.desc}</p>
+            </motion.div>
+          ))}
+        </div>
+      </section>
+
+      {/* Avantages Compétitifs */}
+      <section className="py-32 bg-gradient-to-r from-red-600/10 to-slate-900/50">
+        <div className="max-w-7xl mx-auto px-6">
+          <motion.div 
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            className="text-center mb-20"
+          >
+            <h3 className="text-red-500 font-black uppercase tracking-[0.4em] mb-4 text-xs">Pourquoi CMS</h3>
+            <h2 className="text-5xl font-serif text-white mb-6">Nos Avantages Compétitifs</h2>
+          </motion.div>
+
+          <div className="grid md:grid-cols-2 gap-12">
+            {[
+              { icon: Target, title: "Expertise Multidisciplinaire", desc: "20+ domaines de compétences sous un même toit" },
+              { icon: Rocket, title: "Innovation Continue", desc: "Investissement constant en R&D et technologies" },
+              { icon: Users, title: "Équipe Dédiée", desc: "Techniciens certifiés et expérimentés" },
+              { icon: TrendingUp, title: "Croissance Prouvée", desc: "500+ projets réussis depuis 2015" },
+              { icon: Clock, title: "Réactivité 24/7", desc: "Support technique permanent et urgences gérées" },
+              { icon: Award, title: "Qualité Garantie", desc: "100% de satisfaction client constatée" }
+            ].map((adv, i) => (
+              <motion.div 
+                key={i}
+                initial={{ opacity: 0, x: i % 2 === 0 ? -30 : 30 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ delay: i * 0.1 }}
+                className="flex gap-6 p-8 glass rounded-2xl border-l-4 border-red-600"
+              >
+                <div className="text-red-500 flex-shrink-0"><adv.icon size={40} /></div>
+                <div>
+                  <h4 className="text-white font-bold text-lg mb-2 uppercase">{adv.title}</h4>
+                  <p className="text-slate-400 text-sm leading-relaxed">{adv.desc}</p>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Témoignages Clients */}
+      <section className="py-32 max-w-7xl mx-auto px-6">
+        <motion.div 
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          className="text-center mb-20"
+        >
+          <h3 className="text-red-500 font-black uppercase tracking-[0.4em] mb-4 text-xs">Retours Clients</h3>
+          <h2 className="text-5xl font-serif text-white mb-6">Ce Que Disent Nos Clients</h2>
+        </motion.div>
+
+        <div className="grid md:grid-cols-3 gap-8">
+          {[
+            { name: "Entreprise A", role: "Directeur Général", text: "CMS a transformé notre infrastructure. Professionnalisme et efficacité remarquables.", rating: 5 },
+            { name: "Entreprise B", role: "Responsable Technique", text: "Support 24/7 impeccable. Équipe réactive et compétente. Très satisfait.", rating: 5 },
+            { name: "Entreprise C", role: "Gestionnaire Projet", text: "Délais respectés, qualité irréprochable. CMS est notre partenaire de confiance.", rating: 5 }
+          ].map((testimonial, i) => (
+            <motion.div 
+              key={i}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ delay: i * 0.1 }}
+              className="glass p-8 rounded-2xl border border-white/10"
+            >
+              <div className="flex gap-1 mb-4">
+                {[...Array(testimonial.rating)].map((_, j) => (
+                  <Star key={j} size={16} className="fill-red-600 text-red-600" />
+                ))}
+              </div>
+              <p className="text-slate-300 mb-6 italic leading-relaxed">"{testimonial.text}"</p>
+              <div className="border-t border-white/10 pt-4">
+                <p className="text-white font-bold">{testimonial.name}</p>
+                <p className="text-slate-400 text-sm">{testimonial.role}</p>
+              </div>
+            </motion.div>
+          ))}
+        </div>
+      </section>
+
+      {/* Projets Phares */}
+      <section className="py-32 bg-white/5">
+        <div className="max-w-7xl mx-auto px-6">
+          <motion.div 
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            className="text-center mb-20"
+          >
+            <h3 className="text-red-500 font-black uppercase tracking-[0.4em] mb-4 text-xs">Portfolio</h3>
+            <h2 className="text-5xl font-serif text-white mb-6">Projets Phares</h2>
+          </motion.div>
+
+          <div className="grid md:grid-cols-2 gap-8">
+            {[
+              { title: "Forage Hydraulique Kasai", desc: "Accès à l'eau potable pour 50,000 habitants", image: "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?q=80&w=2070&auto=format&fit=crop" },
+              { title: "Système Solaire Kinshasa", desc: "Installation 500kW pour complexe gouvernemental", image: "https://images.unsplash.com/photo-1509391366360-2e938d440220?q=80&w=2070&auto=format&fit=crop" },
+              { title: "Réseau CCTV Sécurisé", desc: "Surveillance intelligente 200 caméras IP", image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=2070&auto=format&fit=crop" },
+              { title: "Climatisation Hôpital", desc: "Système frigorifique pour bloc opératoire", image: "https://images.unsplash.com/photo-1576091160550-112173f7f869?q=80&w=2070&auto=format&fit=crop" }
+            ].map((project, i) => (
+              <motion.div 
+                key={i}
+                initial={{ opacity: 0, scale: 0.9 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                transition={{ delay: i * 0.1 }}
+                whileHover={{ scale: 1.02 }}
+                className="relative rounded-2xl overflow-hidden group border border-white/10"
+              >
+                <img src={project.image} alt={project.title} className="w-full h-64 object-cover grayscale group-hover:grayscale-0 transition-all duration-700" />
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent"></div>
+                <div className="absolute bottom-0 p-8 w-full">
+                  <h4 className="text-white font-bold text-xl mb-2 uppercase">{project.title}</h4>
+                  <p className="text-slate-300 text-sm">{project.desc}</p>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Certifications & Normes */}
+      <section className="py-32 max-w-7xl mx-auto px-6">
+        <motion.div 
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          className="text-center mb-20"
+        >
+          <h3 className="text-red-500 font-black uppercase tracking-[0.4em] mb-4 text-xs">Conformité</h3>
+          <h2 className="text-5xl font-serif text-white mb-6">Certifications & Normes</h2>
+        </motion.div>
+
+        <div className="grid md:grid-cols-4 gap-8">
+          {["ISO 9001", "ISO 14001", "OHSAS 18001", "Agrément RDC"].map((cert, i) => (
+            <motion.div 
+              key={i}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ delay: i * 0.1 }}
+              className="glass p-8 rounded-2xl text-center border border-red-600/30 hover:border-red-600 transition-all"
+            >
+              <Award size={40} className="text-red-500 mx-auto mb-4" />
+              <p className="text-white font-bold uppercase tracking-widest">{cert}</p>
+            </motion.div>
+          ))}
+        </div>
+      </section>
+
+      {/* CTA Final */}
+      <section className="py-32 bg-gradient-to-r from-red-600 to-red-700 relative overflow-hidden">
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute top-0 left-0 w-96 h-96 bg-white rounded-full blur-3xl"></div>
+          <div className="absolute bottom-0 right-0 w-96 h-96 bg-white rounded-full blur-3xl"></div>
+        </div>
+        
+        <div className="max-w-7xl mx-auto px-6 relative z-10 text-center">
+          <motion.div 
+            initial={{ opacity: 0, scale: 0.9 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+          >
+            <h2 className="text-5xl md:text-6xl font-serif text-white mb-8 font-black">Prêt à Transformer Votre Vision ?</h2>
+            <p className="text-xl text-white/90 max-w-2xl mx-auto mb-12">Contactez notre équipe pour un audit gratuit et découvrez comment CMS peut propulser votre projet.</p>
+            <div className="flex flex-wrap justify-center gap-6">
+              <Link 
+                to="/contact" 
+                className="px-12 py-5 bg-white text-red-600 font-black uppercase tracking-widest rounded-lg hover:bg-slate-100 transition-all shadow-2xl"
+              >
+                Demander un Audit
+              </Link>
+              <a 
+                href={`tel:${CONTACT_INFO.phone}`}
+                className="px-12 py-5 border-2 border-white text-white font-black uppercase tracking-widest rounded-lg hover:bg-white/10 transition-all"
+              >
+                Appeler Maintenant
+              </a>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Footer Info */}
+      <section className="py-20 bg-slate-900/50 border-t border-white/10">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="grid md:grid-cols-3 gap-12">
+            <motion.div 
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+            >
+              <h4 className="text-white font-bold uppercase tracking-widest mb-6">Localisation</h4>
+              <div className="flex gap-3 text-slate-400">
+                <MapPin size={20} className="text-red-500 flex-shrink-0 mt-1" />
+                <p className="text-sm leading-relaxed">{CONTACT_INFO.address}</p>
+              </div>
+            </motion.div>
+
+            <motion.div 
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.1 }}
+            >
+              <h4 className="text-white font-bold uppercase tracking-widest mb-6">Contact Direct</h4>
+              <div className="space-y-3">
+                <a href={`tel:${CONTACT_INFO.phone}`} className="flex gap-3 text-slate-400 hover:text-red-500 transition-colors">
+                  <Phone size={20} className="flex-shrink-0 mt-1" />
+                  <span className="text-sm">{CONTACT_INFO.phone}</span>
+                </a>
+                <a href={`mailto:${CONTACT_INFO.email}`} className="flex gap-3 text-slate-400 hover:text-red-500 transition-colors">
+                  <Mail size={20} className="flex-shrink-0 mt-1" />
+                  <span className="text-sm">{CONTACT_INFO.email}</span>
+                </a>
+              </div>
+            </motion.div>
+
+            <motion.div 
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.2 }}
+            >
+              <h4 className="text-white font-bold uppercase tracking-widest mb-6">Horaires</h4>
+              <div className="text-slate-400 text-sm space-y-2">
+                <p>Lun - Ven: 08:00 - 18:00</p>
+                <p>Sam: 09:00 - 14:00</p>
+                <p>Dim: Fermé</p>
+                <p className="text-red-500 font-bold mt-4">Urgences 24/7</p>
+              </div>
+            </motion.div>
+          </div>
         </div>
       </section>
 

@@ -5,6 +5,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import Home from './pages/Home';
 import About from './pages/About';
+import Services from './pages/Services';
 import Poles from './pages/Poles';
 import Contact from './pages/Contact';
 
@@ -26,6 +27,7 @@ const App: React.FC = () => {
         <main className="flex-grow">
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/services" element={<Services />} />
             <Route path="/le-groupe" element={<About />} />
             <Route path="/nos-poles" element={<Poles />} />
             <Route path="/contact" element={<Contact />} />
