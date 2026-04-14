@@ -91,7 +91,7 @@ export const STATS: Stat[] = [
 ];
 
 export const TEAM: TeamMember[] = [
-  { name: "Joël Mapendo", role: "Leadership Stratégique", image: "/Photo DG.jpeg" },
+  { name: "Joël Mutumoya", role: "Leadership Stratégique", image: "/Photo DG.jpeg" },
   { name: "Charmant Nyungu", role: "Consultant Permanent Expert en Tech et Innovation", image: "/photo M.Charlant Nyungu K.jpg", link: "https://charmantnyungu.com", email: "consultant@charmantnyungu.com" },
   { name: "Prisca Nkondi", role: "Directrice Executive", image: "/directrice.jpeg" }
 ];
