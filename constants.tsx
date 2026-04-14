@@ -6,7 +6,7 @@ import { Pole, Stat, TeamMember } from './types';
 export const CONTACT_INFO = {
   phone: "+243 895 787 511",
   email: "cmsurgencenet@gmail.com",
-  address: "2, Avenue de l'école, Q/Brikin, C/Ngaliema, Kinshasa, RDC",
+  address: "179, Av: Kabambare Q. Nganalokole Réf: Rond point Huillerie. Kinshasa, RDC",
   mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3978.50892404113!2d15.244349475962835!3d-4.352467946979606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1a6a31063990391d%3A0x6731e84a7e934a3b!2sNgaliema%2C%20Kinshasa!5e0!3m2!1sfr!2scd!4v1715873245671!5m2!1sfr!2scd"
 };
 
@@ -17,7 +17,7 @@ export const POLES: Pole[] = [
     icon: <Building2 size={32} />,
     desc: "Développement durable et construction pour l'avenir de la RDC.",
     longDesc: "Nous concevons et réalisons des infrastructures critiques allant du BTP à la gestion des ressources hydrauliques et énergétiques.",
-    image: "https://images.unsplash.com/photo-1541888946425-d81bb19480c5?q=80&w=2070&auto=format&fit=crop",
+    image: "https://images.pexels.com/photos/3807517/pexels-photo-3807517.jpeg?auto=compress&cs=tinysrgb&w=600",
     services: [
       "Construction BTP & Ponts",
       "Forage d'eau (Hydraulique)",
@@ -34,7 +34,7 @@ export const POLES: Pole[] = [
     icon: <Shield size={32} />,
     desc: "Solutions de pointe pour la protection des biens et des personnes.",
     longDesc: "L'intégration technologique au service de votre sécurité physique et numérique avec des systèmes de surveillance intelligents.",
-    image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=2070&auto=format&fit=crop",
+    image: "https://images.pexels.com/photos/3807505/pexels-photo-3807505.jpeg?auto=compress&cs=tinysrgb&w=600",
     services: [
       "Vidéosurveillance (CCTV & IP)",
       "Contrôle d'accès & Serrures",
@@ -51,7 +51,7 @@ export const POLES: Pole[] = [
     icon: <Leaf size={32} />,
     desc: "Gestion globale de l'environnement de travail et de vie.",
     longDesc: "Une maintenance préventive et curative de vos espaces pour garantir confort, hygiène et valorisation de votre patrimoine immobilier.",
-    image: "https://images.unsplash.com/photo-1581578731522-745d05db9ad2?q=80&w=2070&auto=format&fit=crop",
+    image: "https://images.pexels.com/photos/3807514/pexels-photo-3807514.jpeg?auto=compress&cs=tinysrgb&w=600",
     services: [
       "Hygiène & Salubrité (Nettoyage)",
       "Traitement Insalubrité & Désinfection",
@@ -69,7 +69,7 @@ export const POLES: Pole[] = [
     icon: <Fuel size={32} />,
     desc: "Solutions logistiques complètes pour l'approvisionnement en carburant.",
     longDesc: "Nous assurons la distribution et la livraison de carburant de qualité supérieure avec une flotte moderne et sécurisée. Notre expertise couvre l'approvisionnement en essence, diesel et autres produits pétroliers pour les entreprises, institutions et particuliers à travers la RDC.",
-    image: "https://images.unsplash.com/photo-1559027615-cd2628902d4a?q=80&w=2070&auto=format&fit=crop",
+    image: "https://images.pexels.com/photos/3807516/pexels-photo-3807516.jpeg?auto=compress&cs=tinysrgb&w=600",
     services: [
       "Livraison Essence & Diesel",
       "Approvisionnement en Carburant",

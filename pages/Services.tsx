@@ -12,7 +12,7 @@ const Services: React.FC = () => {
       <section className="relative py-48 overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img 
-            src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2070&auto=format&fit=crop" 
+            src="https://images.pexels.com/photos/3807517/pexels-photo-3807517.jpeg?auto=compress&cs=tinysrgb&w=1200" 
             className="w-full h-full object-cover opacity-20"
             alt="Services background"
           />

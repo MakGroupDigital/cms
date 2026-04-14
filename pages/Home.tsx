@@ -29,7 +29,7 @@ const Home: React.FC = () => {
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
         <motion.div style={{ opacity: heroOpacity, scale: heroScale }} className="absolute inset-0 z-0">
           <img 
-            src="https://images.unsplash.com/photo-1517089596392-fb9a9033e05b?q=80&w=2070&auto=format&fit=crop" 
+            src="https://images.pexels.com/photos/3807517/pexels-photo-3807517.jpeg?auto=compress&cs=tinysrgb&w=1200" 
             alt="Futuristic Building" 
             className="w-full h-full object-cover opacity-30 brightness-50"
           />
@@ -131,7 +131,7 @@ const Home: React.FC = () => {
               whileHover={{ scale: 0.98 }}
               className="md:col-span-8 relative rounded-3xl overflow-hidden group border border-white/10"
             >
-              <img src="https://images.unsplash.com/photo-1503387762-592dea58ef21?q=80&w=2070&auto=format&fit=crop" className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110 grayscale group-hover:grayscale-0" alt="BTP" />
+              <img src="https://images.pexels.com/photos/3807517/pexels-photo-3807517.jpeg?auto=compress&cs=tinysrgb&w=1200" className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110 grayscale group-hover:grayscale-0" alt="BTP" />
               <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent"></div>
               <div className="absolute bottom-0 p-10">
                 <div className="text-red-500 mb-4"><Building2 size={48} /></div>
@@ -146,7 +146,7 @@ const Home: React.FC = () => {
               whileHover={{ scale: 0.98 }}
               className="md:col-span-4 relative rounded-3xl overflow-hidden group border border-white/10"
             >
-              <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=2070&auto=format&fit=crop" className="absolute inset-0 w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-1000 group-hover:scale-110" alt="Security" />
+              <img src="https://images.pexels.com/photos/3807505/pexels-photo-3807505.jpeg?auto=compress&cs=tinysrgb&w=1200" className="absolute inset-0 w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-1000 group-hover:scale-110" alt="Security" />
               <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/60 to-transparent"></div>
               <div className="absolute bottom-0 p-10">
                 <div className="text-red-500 mb-4"><Shield size={48} /></div>
@@ -160,7 +160,7 @@ const Home: React.FC = () => {
               whileHover={{ scale: 0.98 }}
               className="md:col-span-4 relative rounded-3xl overflow-hidden group border border-white/10"
             >
-              <img src="https://images.unsplash.com/photo-1581578731522-745d05db9ad2?q=80&w=2070&auto=format&fit=crop" className="absolute inset-0 w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-1000" alt="Facility" />
+              <img src="https://images.pexels.com/photos/3807514/pexels-photo-3807514.jpeg?auto=compress&cs=tinysrgb&w=1200" className="absolute inset-0 w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-1000" alt="Facility" />
               <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/60 to-transparent"></div>
               <div className="absolute bottom-0 p-10">
                 <div className="text-red-500 mb-4"><Zap size={48} /></div>
@@ -240,7 +240,7 @@ const Home: React.FC = () => {
             className="relative"
           >
             <div className="absolute inset-0 bg-red-600/20 blur-[100px] rounded-full"></div>
-            <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?q=80&w=2070&auto=format&fit=crop" className="rounded-[40px] shadow-3xl grayscale hover:grayscale-0 transition-all duration-1000 relative z-10 border border-white/10" alt="Our Team" />
+            <img src="https://images.pexels.com/photos/3807507/pexels-photo-3807507.jpeg?auto=compress&cs=tinysrgb&w=1200" className="rounded-[40px] shadow-3xl grayscale hover:grayscale-0 transition-all duration-1000 relative z-10 border border-white/10" alt="Our Team" />
             <div className="absolute -bottom-10 -left-10 glass p-8 rounded-3xl z-20 border-b-4 border-red-600 animate-float">
               <div className="text-5xl font-black text-white mb-2">24/7</div>
               <div className="text-red-500 text-xs font-black uppercase tracking-widest">Support Technique</div>
@@ -417,10 +417,10 @@ const Home: React.FC = () => {
 
           <div className="grid md:grid-cols-2 gap-8">
             {[
-              { title: "Forage Hydraulique Kasai", desc: "Accès à l'eau potable pour 50,000 habitants", image: "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?q=80&w=2070&auto=format&fit=crop" },
-              { title: "Système Solaire Kinshasa", desc: "Installation 500kW pour complexe gouvernemental", image: "https://images.unsplash.com/photo-1509391366360-2e938d440220?q=80&w=2070&auto=format&fit=crop" },
-              { title: "Réseau CCTV Sécurisé", desc: "Surveillance intelligente 200 caméras IP", image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=2070&auto=format&fit=crop" },
-              { title: "Climatisation Hôpital", desc: "Système frigorifique pour bloc opératoire", image: "https://images.unsplash.com/photo-1576091160550-112173f7f869?q=80&w=2070&auto=format&fit=crop" }
+              { title: "Forage Hydraulique Kasai", desc: "Accès à l'eau potable pour 50,000 habitants", image: "/imageforage_1200_nocrop_1_1_20250305142651677887_IMG-20250305-WA0050.jpg" },
+              { title: "Système Solaire Kinshasa", desc: "Installation 500kW pour complexe gouvernemental", image: "/ Système Solaire Kinshasa.jpeg" },
+              { title: "Réseau CCTV Sécurisé", desc: "Surveillance intelligente 200 caméras IP", image: "/Réseau CCTV Sécurisé.webp" },
+              { title: "Climatisation Hôpital", desc: "Système frigorifique pour bloc opératoire", image: "https://images.pexels.com/photos/3807514/pexels-photo-3807514.jpeg" }
             ].map((project, i) => (
               <motion.div 
                 key={i}

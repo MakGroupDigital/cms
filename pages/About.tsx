@@ -11,7 +11,7 @@ const About: React.FC = () => {
       <section className="relative py-48 overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img 
-            src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?q=80&w=2069&auto=format&fit=crop" 
+            src="https://images.pexels.com/photos/3807517/pexels-photo-3807517.jpeg?auto=compress&cs=tinysrgb&w=1200" 
             className="w-full h-full object-cover opacity-20"
             alt="Corporate background"
           />
@@ -60,7 +60,7 @@ const About: React.FC = () => {
           className="relative"
         >
           <div className="absolute -inset-4 bg-red-600/20 blur-2xl rounded-full"></div>
-          <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2070&auto=format&fit=crop" className="rounded-3xl shadow-2xl relative z-10 border border-white/10" alt="Innovation" />
+          <img src="https://images.pexels.com/photos/3807514/pexels-photo-3807514.jpeg?auto=compress&cs=tinysrgb&w=1200" className="rounded-3xl shadow-2xl relative z-10 border border-white/10" alt="Innovation" />
         </motion.div>
       </section>
 
