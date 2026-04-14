@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Building2, Shield, Leaf, Zap, Droplet, Sun, Camera, Network, Wind, Waves } from 'lucide-react';
+import { Building2, Shield, Leaf, Zap, Droplet, Sun, Camera, Network, Wind, Waves, Fuel } from 'lucide-react';
 import { Pole, Stat, TeamMember } from './types';
 
 export const CONTACT_INFO = {
@@ -62,6 +62,24 @@ export const POLES: Pole[] = [
       "Climatisation Commerciale",
       "Confort Thermique & Qualité de l'Air"
     ]
+  },
+  {
+    id: "carburant",
+    title: "Pôle Distribution & Livraison de Carburant",
+    icon: <Fuel size={32} />,
+    desc: "Solutions logistiques complètes pour l'approvisionnement en carburant.",
+    longDesc: "Nous assurons la distribution et la livraison de carburant de qualité supérieure avec une flotte moderne et sécurisée. Notre expertise couvre l'approvisionnement en essence, diesel et autres produits pétroliers pour les entreprises, institutions et particuliers à travers la RDC.",
+    image: "https://images.unsplash.com/photo-1559027615-cd2628902d4a?q=80&w=2070&auto=format&fit=crop",
+    services: [
+      "Livraison Essence & Diesel",
+      "Approvisionnement en Carburant",
+      "Transport Sécurisé de Produits Pétroliers",
+      "Gestion de Stocks & Inventaires",
+      "Maintenance de Citernes",
+      "Conformité Normes Environnementales",
+      "Service de Ravitaillement d'Urgence",
+      "Contrats d'Approvisionnement Long Terme"
+    ]
   }
 ];
 
@@ -75,5 +93,5 @@ export const STATS: Stat[] = [
 export const TEAM: TeamMember[] = [
   { name: "Joël Mapendo", role: "Leadership Stratégique", image: "/Photo DG.jpeg" },
   { name: "Charmant Nyungu", role: "Consultant Permanent Expert en Tech et Innovation", image: "/photo M.Charlant Nyungu K.jpg", link: "https://charmantnyungu.com", email: "consultant@charmantnyungu.com" },
-  { name: "Coordination Logistique", role: "Efficacité Opérationnelle", image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=1976&auto=format&fit=crop" }
+  { name: "Prisca Nkondi", role: "Directrice Executive", image: "/directrice.jpeg" }
 ];
